@@ -8,14 +8,23 @@ document.getElementById('greeting').innerHTML = "Hola!";
 
 /* Make a function that takes 3 arguments
    Returns 1 String message like this: "Hello Jin Kuwata, your username is fabulous." */
-
+var greeting = function(a,b,c){
+	a=username;
+	b=first;
+	c=last;
+console.log('Hello'+' '+b+' '+c+','+' your username'+' '+a+' '+'is fabulous.');
+	return 'Hello'+' '+b+' '+c+','+' your username'+' '+a+' '+'is fabulous.';
+};
 /* Replace the h1 innerText with the message by calling the function you created. */
+document.getElementById('greeting').innerHTML = greeting();
 
 
 
 // Try console logging these, what gets returned?
 var emailEl = document.getElementById('userEmail');
+console.log(emailEl);
 var basicsBtnEl = document.getElementById('basicsBtn');
+console.log(basicsBtnEl);
 
 // Adds an event 'click' listener on the button element
 // 2nd arg, an anonymous function is what gets called-back after the 'click'
